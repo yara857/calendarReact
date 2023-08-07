@@ -61,10 +61,20 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-### Deployment
+To create a calendar similar to Google Calendar using React and the @fullcalendar libraries, you can leverage the power of these libraries to divide days into time slots, months into weeks, and years into months.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+First, set up a new React project using the create-react-app command. Once your project is set up, install the necessary @fullcalendar libraries by running the appropriate npm command.
+npm i @fullcalendar/daygrid @fullcalendar/interaction @fullcalendar/timegrid @fullcalendar/react
 
-### `npm run build` fails to minify
+In your calendar component, import the required dependencies from the @fullcalendar package. These dependencies include @fullcalendar/daygrid, @fullcalendar/interaction, @fullcalendar/timegrid, and @fullcalendar/react.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Next, create a new component specifically for your calendar. Within this component, render the FullCalendar component provided by @fullcalendar/react. Configure the plugins you want to use, such as dayGridPlugin, interactionPlugin, and timeGridPlugin. Specify the initial view you want to display, such as dayGridMonth to show a monthly view by default.
+
+Additionally, customize the header toolbar to include navigation buttons for switching between different calendar views. You can include options like "prev", "next", "today", and buttons for various views like "dayGridMonth", "timeGridWeek", and "timeGridDay".
+
+Finally, in your main application file, import and render your calendar component. You can also add a title or heading to identify your calendar.
+
+Launch your React development server and open your browser to see your calendar in action. You should be able to switch between different views, navigate through months, and interact with the calendar based on the plugins and configurations you've set up.
+
+Remember to refer to the documentation of the @fullcalendar libraries for more advanced options and customization capabilities. With these libraries and React, you can create a powerful and interactive calendar similar to Google Calendar.
+
